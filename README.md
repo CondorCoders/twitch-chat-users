@@ -1,6 +1,10 @@
-# Twitch Chat Stickers Album
+# Twitch Chat !Hack
 
-Crea una pared de stickers con los usuarios activos en el chat que utilicen el comando `!sticker`
+Este proyecto permite que las fotos de perfil de los usuarios que escriban el comando `!hack` en el chat de Twitch aparezcan dentro de una computadora cambiando a través de una animación de glitch. Sus nombres de usuario se visualizan como archivos que "infectan" el sistema.
+
+## Preview
+
+![Preview](./src/assets/preview.gif)
 
 ## Setup local
 
@@ -8,19 +12,15 @@ Crea una pared de stickers con los usuarios activos en el chat que utilicen el c
 
 ```
 VITE_TWTICH_CLIENT_ID
-VITE_TWITCH_ACCESS_TOKEN
+VITE_TWITCH_CLIENT_SECRET
 ```
 
-2. Conseguir client ID creando una aplicación en [twtich develop console](https://dev.twitch.tv/console) y colocar el Client ID en `VITE_TWTICH_CLIENT_ID`
+2. Conseguir `CLIENT_ID` y `CLIENT_SECRET` creando una aplicación en [twtich develop console](https://dev.twitch.tv/console) y colocar el `CLIENT_ID` en `VITE_TWTICH_CLIENT_ID` y `CLIENT_SECRET` en `VITE_TWITCH_CLIENT_SECRET` de tu archivo `.env.local`.
 
-3. Para conseguir el `ACCESS TOKEN` usaremos el [Implicit grant flow](https://dev.twitch.tv/docs/authentication/getting-tokens-oauth/#implicit-grant-flow) de Twitch API. Copia la URL a continuacion y reemplaza `MY_CLIENT_ID` por tu Client ID que conseguiste en el paso anterios.
-   `https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=MY_CLIENT_ID&redirect_uri=http://localhost:3000&scope=channel%3Amanage%3Apolls+channel%3Aread%3Apolls&state=c3ab8aa609ea11e793ae92361f002671`
+3. Actualiza `channels: ["condorcoders"],` en `App.tsx` con el nombre del canal de Twitch al que quieres
 
-4. Si modificaste el link de manera correcta, verás una página de log in para autorizar a tu app con tu cuenta.
-5. Una vez que aceptes, copia la URL de la página. En esta URL encontrarás `#access_token`. Copia el valor y colócalo en `VITE_TWITCH_ACCESS_TOKEN`
-6. Actualiza `channels: ["condorcoders"],` en `App.tsx` con el nombre del canal de Twitch al que quieres
+## ¿Quieres contribuir? Aquí algunas cosas que puedes mejorar
 
-## Proximamente
-
-- Refactorizar? Cambiar de tmi y twitch api a [twpurple](https://twurple.js.org/) para evitar el flow de autenticación
-- Aplicar estilos
+- Mejorar diseño de la computadora
+- Mejorar animación `glitch`
+- Crear una página de inicio donde los usuarios puedan ingresar el nombre de su canal de Twitch. Después de ingresar el nombre, los usuarios serán redirigidos a la página con la computadora. A través de los parámetros en la URL (query params), se obtiene el nombre del canal para comenzar a escuchar los mensajes de su chat.
