@@ -26,7 +26,7 @@ export const useTwitchChat = (channel?: string) => {
       chatClient.onMessage(async (channel, user, text, message) => {
         const [command] = text.split(" ");
 
-        if (command === "!hack") {
+        if (command?.toLowerCase() === "!hack") {
           const user = await apiClient.users.getUserById(
             message.userInfo.userId
           );
