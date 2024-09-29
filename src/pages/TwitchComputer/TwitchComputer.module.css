@@ -1,0 +1,26 @@
+.username {
+  padding: 1rem;
+  animation: pulse 0.8s alternate infinite ease-in-out;
+}
+
+.hack {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+.channel {
+  font-size: 3rem;
+  font-family: monospace;
+  font-weight: 700;
+  font-style: italic;
+  padding: 1rem;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

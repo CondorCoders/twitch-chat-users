@@ -1,0 +1,36 @@
+.mainContainer {
+  min-height: 100vh;
+  color: #fff;
+  background-color: #000;
+  font-family: monospace;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+.noise {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  inset: -200%;
+  background-image: url("../../assets/Noise.svg");
+
+  z-index: -1;
+  opacity: 0.8;
+  animation: noise 0.2s linear infinite both;
+}
+
+@keyframes noise {
+  0% {
+    transform: translate(10%, -10%);
+  }
+  100% {
+    transform: translate(-10%, -10%);
+  }
+}

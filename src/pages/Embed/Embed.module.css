@@ -1,0 +1,23 @@
+.wrapper {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.username {
+  font-family: monospace;
+  padding: 1rem;
+  font-size: 1.5rem;
+  animation: pulse 1.5s alternate infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

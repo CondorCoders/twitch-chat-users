@@ -10,9 +10,6 @@
   padding: 1rem;
   text-align: center;
 }
-.accent {
-  color: greenyellow;
-}
 .channelInput {
   background-color: transparent;
   color: #fff;
@@ -20,7 +17,12 @@
   border-radius: 0.5rem;
   padding: 0.5rem;
 }
-
+.sourceImage {
+  max-width: 250px;
+}
+.overlayImage {
+  max-width: 400px;
+}
 .button {
   padding: 0.5rem;
   margin-left: 0.5rem;
@@ -34,7 +36,4 @@
 .button:hover {
   cursor: pointer;
   background-color: rgb(172, 200, 129);
-}
-.computer.computer {
-  max-width: 200px;
 }
