@@ -23,7 +23,7 @@ export const useTwitchChat = (channel?: string) => {
   useEffect(() => {
     chatClient.connect();
     const connectChat = async () =>
-      chatClient.onMessage(async (channel, user, text, message) => {
+      chatClient.onMessage(async (_channel, _user, text, message) => {
         const [command] = text.split(" ");
 
         if (command?.toLowerCase() === "!hack") {
