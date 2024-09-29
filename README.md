@@ -23,4 +23,3 @@ VITE_TWITCH_CLIENT_SECRET
 
 - Mejorar diseño de la computadora
 - Mejorar animación `glitch`
-- Crear una página de inicio donde los usuarios puedan ingresar el nombre de su canal de Twitch. Después de ingresar el nombre, los usuarios serán redirigidos a la página con la computadora. A través de los parámetros en la URL (query params), se obtiene el nombre del canal para comenzar a escuchar los mensajes de su chat.
