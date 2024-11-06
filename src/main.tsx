@@ -17,11 +17,11 @@ const router = createBrowserRouter([
     element: <TwitchComputer />,
   },
   {
-    path: "/embed/:channel",
+    path: "/overlay/:channel",
     element: <Embed />,
   },
   {
-    path: "/overlay",
+    path: "/overlay-instructions",
     element: <Overlay />,
   },
 ]);

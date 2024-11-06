@@ -37,7 +37,7 @@ function App() {
         <button className={styles.button}>Crear</button>
       </form>
       <p>¿Quieres usarlo como un overlay de OBS?</p>
-      <Link to={"/overlay"} className={styles.button}>
+      <Link to={"/overlay-instructions"} className={styles.button}>
         Crear mi overlay
       </Link>
     </Layout>

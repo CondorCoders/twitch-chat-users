@@ -13,7 +13,7 @@ export const Overlay = () => {
     const channelName = formData.get("channelName");
     if (channelName) {
       setOverlayLink(
-        `https://twitchhackoverlay.condorcoders.com/embed/${channel}`
+        `https://twitchhackoverlay.condorcoders.com/overlay/${channel}`
       );
     }
   };
