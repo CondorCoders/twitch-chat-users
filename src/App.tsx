@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Layout } from "./components/Layout/Layout";
 import styles from "./App.module.css";
 import { Computer } from "./components/Computer/Computer";
@@ -37,9 +37,9 @@ function App() {
         <button className={styles.button}>Crear</button>
       </form>
       <p>¿Quieres usarlo como un overlay de OBS?</p>
-      <button className={styles.button} onClick={() => navigate("/overlay")}>
+      <Link to={"/overlay"} className={styles.button}>
         Crear mi overlay
-      </button>
+      </Link>
     </Layout>
   );
 }

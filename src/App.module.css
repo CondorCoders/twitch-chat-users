@@ -29,6 +29,10 @@
   box-shadow: none;
   text-transform: uppercase;
   font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 1rem;
 }
 
 .button:hover {
