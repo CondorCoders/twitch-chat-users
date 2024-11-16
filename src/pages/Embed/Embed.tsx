@@ -10,7 +10,7 @@ export const Embed = () => {
   return (
     <div className={styles.wrapper}>
       <Computer user={activeUser} />
-      <p className={styles.username}>Downloading {activeUser?.username} ...</p>
+      {/* <p className={styles.username}>Downloading {activeUser?.username} ...</p> */}
     </div>
   );
 };
