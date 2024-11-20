@@ -23,6 +23,6 @@ VITE_TWITCH_CLIENT_SECRET
 
 ## ¿Quieres contribuir? Aquí algunas cosas que puedes mejorar
 
-[x] Mejorar diseño de la computadora
-[ ] Mejorar animación `glitch`
-[ ] Mejorar instrucciones para crear un overlay
+- [x] Mejorar diseño de la computadora
+- [ ] Mejorar animación `glitch`
+- [ ] Mejorar instrucciones para crear un overlay
